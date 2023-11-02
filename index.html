@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css"/>
+    <title>React</title>
+</head>
+<body>
+    <!--HTML-->
+    <div id="root_html">
+        <h1>Hello World by HTML</h1>
+    </div>
+    <div id="root_javascript"></div>
+    
+    <!--JavaScript-->
+    <script>
+        const heading = document.createElement("h1");
+        heading.innerHTML = "Hello World by Javascript";
+
+        const root = document.getElementById("root_javascript");
+        root.appendChild(heading);
+    </script>    
+
+    <!--CDN Links to import react libraries-->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+    <!--React-->
+    <div id="root_react"></div>
+    <div id="root_react_nested"></div>
+    <script src="./App.js"></script>
+</body>
+</html>
